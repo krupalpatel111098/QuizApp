@@ -29,16 +29,20 @@ class Result extends StatelessWidget {
           Text(
             resultPhase,
             style: TextStyle(
-              fontSize: 30,
+              fontSize: 36,
               fontWeight: FontWeight.bold,
             ),
-            textAlign: TextAlign.right,
+            textAlign: TextAlign.center,
           ),
+          SizedBox(
+  width: 200.0,
+  height: 300.0,
+),
           TextButton(
             onPressed: resetHandler,
             child: Text(
-              "Restart Quiz !!",
-              style: TextStyle(color: Colors.red),
+              " Restart Quiz !!!",
+              style: TextStyle(color: Colors.blue),
             ),
           )
         ],
