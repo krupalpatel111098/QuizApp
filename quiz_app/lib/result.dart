@@ -8,9 +8,9 @@ class Result extends StatelessWidget {
 
   String get resultPhase {
     String resultText;
-    if (resultScore <= 8) {
-      resultText = "You'r awasome";
-    } else if (resultScore <= 12) {
+    if (resultScore <= 7) {
+      resultText = "You are awasome";
+    } else if (resultScore <= 11) {
       resultText = "Pretty Likeable! ";
     } else if (resultScore <= 16) {
       resultText = "You'r strenge..?";
@@ -29,16 +29,16 @@ class Result extends StatelessWidget {
           Text(
             resultPhase,
             style: TextStyle(
-              fontSize: 36,
+              fontSize: 30,
               fontWeight: FontWeight.bold,
             ),
-            textAlign: TextAlign.center,
+            textAlign: TextAlign.right,
           ),
           TextButton(
             onPressed: resetHandler,
             child: Text(
-              "Restart Quiz !",
-              style: TextStyle(color: Colors.blue),
+              "Restart Quiz !!",
+              style: TextStyle(color: Colors.red),
             ),
           )
         ],
