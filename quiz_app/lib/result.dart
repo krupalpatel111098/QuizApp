@@ -22,18 +22,13 @@ class Result extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return body;
+  }
+  Widget get body=>Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
-            resultPhase,
-            style: TextStyle(
-              fontSize: 30,
-              fontWeight: FontWeight.bold,
-            ),
-            textAlign: TextAlign.right,
-          ),
+          resultPhaseView,
           TextButton(
             onPressed: resetHandler,
             child: Text(
@@ -44,5 +39,14 @@ class Result extends StatelessWidget {
         ],
       ),
     );
-  }
+
+  
+Widget get resultPhaseView=>Text(
+            resultPhase,
+            style: TextStyle(
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+            ),
+            textAlign: TextAlign.right,
+          );
 }
