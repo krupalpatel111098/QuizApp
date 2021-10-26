@@ -33,15 +33,6 @@ class _MyAppState extends State<MyApp> {
         {"text": "Dog", "score": 30},
       ]
     },
-    {
-      "question": "Who\'s your favourite istructor ?",
-      "answer": [
-        {"text": "Max", "score": 1},
-        {"text": "Min", "score": 2},
-        {"text": "Div", "score": 3},
-        {"text": "Avg", "score": 4},
-      ]
-    },
   ];
   var _questionIndex = 0;
   var _totalScore = 0;
